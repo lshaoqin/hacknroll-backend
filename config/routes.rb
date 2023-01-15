@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   get '/game', to: 'rounds#index'
   post '/game', to: 'guesses#add'
+
+  get '/get_id', to: 'users#create'
 end
